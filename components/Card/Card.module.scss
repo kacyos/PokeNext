@@ -1,0 +1,56 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 1em;
+  margin-bottom: 2em;
+  width: 23%;
+  border-radius: 1em;
+  border: 1px solid #e33d33;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.5);
+  background: #e6dada; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #274046,
+    #e6dada
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #274046,
+    #e6dada
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+
+  > p {
+    margin: 1em 0;
+    background-color: #e33d33;
+    border-radius: 20px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > h3 {
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    padding: 0.7em 1.2em;
+    border-radius: 15px;
+    font-weight: 700;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: #e33d33;
+      color: #fff;
+    }
+  }
+}
