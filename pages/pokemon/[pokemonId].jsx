@@ -2,6 +2,9 @@ import Image from "next/image";
 
 import styles from "../../styles/Pokemon.module.scss";
 export default function PokemonId({ pokemon }) {
+  if (pokemon) {
+    console.log(pokemon);
+  }
   return (
     <div className={styles.pokemon_container}>
       <h1>{pokemon.name}</h1>
